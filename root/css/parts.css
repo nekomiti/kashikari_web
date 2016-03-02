@@ -1,0 +1,606 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+Heading Module
+========================================================================== */
+.headingBlock01{
+	margin-bottom:30px;
+	padding-bottom:6px;
+	border-bottom:solid 3px #f2eade;
+}
+
+.headingBlock02{
+	margin-bottom:30px;
+	padding-bottom:6px;
+	border-bottom:solid 3px #fff;
+}
+
+.headingBlock03{
+	margin-bottom:30px;
+	padding-bottom:6px;
+	border-bottom:solid 3px #f2eade;
+}
+.headingBlock03 h2{
+	float: left;
+}
+.headingBlock03 .profileCondigBtn{
+	float: right;
+	margin-right: 5px;
+}
+.headingBlock03 .profileCondigBtn a:hover{
+	text-decoration:underline;
+}
+.headingBlock03 .profileCondigBtn a img{
+	vertical-align:bottom;
+	margin-left:5px;
+}
+.headingBlock03 .profileCondigBtn a:hover img{
+	transform: rotate(1380deg);
+	transition: 12s linear;
+}
+@media screen and (max-width: 640px){
+	.headingBlock01{
+		margin-bottom:30px;
+		padding-bottom:6px;
+		border-bottom:solid 3px #f2eade;
+	}
+
+	.headingBlock02{
+		margin-bottom:30px;
+		padding-bottom:10px;
+		border-bottom:solid 3px #fff;
+		text-align:center;
+		font-size:1.2rem;
+	}
+	.headingBlock03 h2{
+		float: none;
+		text-align: center;
+	}
+
+	.headingBlock03{
+		margin-bottom:30px;
+		padding-bottom:6px;
+		border-bottom:solid 3px #f2eade;
+		text-align: center;
+	}
+	.headingBlock03 .profileCondigBtn{
+		float: right;
+		margin-right: 20px;
+	}
+}
+
+
+/* ==========================================================================
+Link Module
+========================================================================== */
+/* linkBlock01
+-------------------------------------*/
+.linkBlock01{
+	text-align:right;
+}
+
+.linkBlock01 p{
+	display:inline-block;
+	background:url(../images/cmn_icon_001.png) no-repeat 0 0.1em;
+	background-position:0 0.1em;
+	transition: 0.1s ease;
+}
+.linkBlock01 p:hover{
+	background-position:0.1em 0.1em;
+	transition: 0.1s ease;
+}
+
+.linkBlock01 p a{
+	font-weight:bold;
+	padding-left:25px;
+}
+
+.linkBlock01 p a:hover{
+	color:#ff9c00;
+	border-bottom:dotted 2px #ff9c00;
+}
+
+/* linkBlock02
+-------------------------------------*/
+.linkBlock02{
+	text-align:center;
+}
+
+.linkBlock02 p{
+	display:inline-block;
+	background:url(../images/cmn_icon_001.png) no-repeat 0 0.1em;
+}
+
+.linkBlock02 p a{
+	font-weight:bold;
+	margin-left:25px;
+}
+
+.linkBlock02 p a:hover{
+	color:#ff9c00;
+	border-bottom:dotted 2px #ff9c00;
+}
+/* ==========================================================================
+Button Module
+========================================================================== */
+.btnType01{
+	padding:12px 60px 8px;
+	text-align:center;
+	background:#ff9c00;
+	border:none;
+	font-family:inherit;
+	font-size:171%;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	transition: 0.1s ease;
+}
+.btnType01:hover{
+	box-shadow: 0.1em 0.1em 0 #b36d00;
+	transition: 0.1s ease;
+}
+
+.btnType02{
+	padding:12px 35px 8px;
+	text-align:center;
+	background:#ff9c00;
+	border:none;
+	font-family:inherit;
+	font-size:171%;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	transition: 0.1s ease;
+}
+.btnType02:hover{
+	box-shadow: 0.1em 0.1em 0 #b36d00;
+	transition: 0.1s ease;
+}
+
+.btnType03{
+	display:block;
+	width:80px;
+	margin:0 auto;
+	padding:4px 10px 2px;
+	background:#ff9c00;
+	font-size:114%;
+	font-weight:bold;
+	color:#fff;
+	transition: 0.1s ease;
+}
+.btnType03:hover{
+	box-shadow: 0.1em 0.1em 0 #b36d00;
+	transition: 0.1s ease;
+}
+
+.btnType04{
+	display:block;
+	width:80px;
+	margin:0 auto;
+	padding:4px 10px 2px;
+	background:#fff;
+	font-size:114%;
+	font-weight:bold;
+	color:#4d3b1e;
+	transition: 0.1s ease;
+}
+.btnType04:hover{
+	box-shadow: 0.1em 0.1em 0 #73572b;
+	transition: 0.1s ease;
+}
+
+.btnType05{
+	display:block;
+	width:80px;
+	margin:0 auto;
+	padding:4px 10px 2px;
+	background:#dcd4c9;
+	font-size:114%;
+	font-weight:bold;
+	color:#fefefe;
+	transition: 0.1s ease;
+}
+.btnType05:hover{
+	box-shadow: 0.1em 0.1em 0 #ada69c;
+	transition: 0.1s ease;
+}
+
+.btnType06{
+	display:block;
+	width:80px;
+	margin:0 auto;
+	padding:4px 10px 2px;
+	background:#4d3b1e;
+	font-size:114%;
+	font-weight:bold;
+	color:#fff;
+	transition: 0.1s ease;
+}
+.btnType06:hover{
+	box-shadow: 0.1em 0.1em 0 #221b0f;
+	transition: 0.1s ease;
+}
+
+.btnType07{
+	width:100%;
+	padding:20px 10px 20px 120px;
+	margin:90px 0 30px;
+	text-align:left;
+	background:#ff9c00 url(../images/ls_bg_001.gif) no-repeat 80px 0.5em;
+	border:solid 3px #fff;
+	font-family:inherit;
+	font-size:150%;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	display:block;
+	transition: 0.1s ease;
+}
+.btnType07:hover{
+	box-shadow: 0.1em 0.1em 0 #c57800;
+	transition: 0.1s ease;
+}
+@media screen and (max-width: 640px){
+	.btnType07{
+		padding:20px 10%;
+		text-align:center;
+		background:#ff9c00 url(../images/ls_bg_001.gif) no-repeat 10% 0.5em;
+		font-size:120%;
+	}
+}
+
+.btnType08{
+	width:100%;
+	padding:20px 10px 20px 80px;
+	margin:90px 0 30px;
+	text-align:left;
+	background:#ff9c00 url(../images/ls_bg_001.gif) no-repeat 40px 0.5em;
+	border:solid 3px #fff;
+	font-family:inherit;
+	font-size:150%;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	display:block;
+	transition: 0.1s ease;
+}
+.btnType08:hover{
+	box-shadow: 0.1em 0.1em 0 #c57800;
+	transition: 0.1s ease;
+}
+@media screen and (max-width: 640px){
+	.btnType08{
+		padding:20px 10%;
+		text-align:center;
+		background:#ff9c00 url(../images/ls_bg_001.gif) no-repeat 10% 0.5em;
+		font-size:120%;
+	}
+}
+
+.centerBtnBlock01{
+	text-align:center;
+	padding-top:30px;
+}
+
+/* ==========================================================================
+Icon Module
+========================================================================== */
+.iconType01{
+	display:block;
+	width:80px;
+	margin:0 auto;
+	padding:4px 10px 2px;
+	background:#ff9c00;
+	font-size:114%;
+	font-weight:bold;
+	color:#fff;
+}
+
+.iconType02{
+	display:block;
+	width:80px;
+	margin:0 auto;
+	padding:4px 10px 2px;
+	background:#fff;
+	font-size:114%;
+	font-weight:bold;
+	color:#4d3b1e;
+}
+
+.iconType03{
+	display:block;
+	width:80px;
+	margin:0 auto;
+	padding:4px 10px 2px;
+	background:#dcd4c9;
+	font-size:114%;
+	font-weight:bold;
+	color:#fefefe;
+}
+
+.iconType04{
+	display:block;
+	width:80px;
+	margin:0 auto;
+	padding:4px 10px 2px;
+	background:#4d3b1e;
+	font-size:114%;
+	font-weight:bold;
+	color:#fff;
+}
+
+/* ==========================================================================
+BookBlock Module
+========================================================================== */
+/* bookListBlock01
+-------------------------------------*/
+.bookListBlock01 >ul >li{
+	float:left;
+	margin-bottom:20px;
+}
+
+.bookListBlock01 >ul >li:nth-child(odd){
+	margin-right:15px;
+}
+@media screen and (max-width: 640px){
+	.bookListBlock01 >ul >li{
+		float:none;
+	}
+	.bookListBlock01 >ul >li:nth-child(odd){
+		margin-right:0;
+	}
+}
+
+/* bookDetailBlock01
+-------------------------------------*/
+.bookDetailBlock01{
+	width:330px;
+	padding:30px;
+	background:#fff;
+	border-radius:5px;
+
+}
+@media screen and (max-width: 640px){
+	.bookDetailBlock01{
+		width: 100%;
+		max-width:390px;
+		box-sizing: border-box;
+		margin:0 auto;
+	}
+}
+
+.bookDetailBlock01.anotherColor{
+	background:#dcd4c9;
+}
+
+.bookDetailBlock01 .image{
+	float:left;
+	width:120px;
+}
+
+.bookDetailBlock01 .detail{
+	float:right;
+	width:180px;
+	line-height:1.42;
+}
+@media screen and (max-width: 410px){
+
+	.bookDetailBlock01 .image{
+		float:none;
+		width:100%;
+		text-align: center;
+	}
+
+	.bookDetailBlock01 .detail{
+		float:none;
+		width:100%;
+		line-height:1.42;
+		margin-top: 20px;
+	}
+}
+
+.bookDetailBlock01 .detail dl{
+	border-bottom:solid 3px #f2eade;
+	margin-bottom:20px;
+}
+
+.bookDetailBlock01.anotherColor .detail dl{
+	border-bottom:solid 3px #fff;
+}
+
+.bookDetailBlock01 .detail dl dt{
+	margin-bottom:15px;
+	word-wrap:break-word;
+}
+
+.bookDetailBlock01 .detail dl dd{
+	margin-bottom:15px;
+}
+
+.bookDetailBlock01 .detail dl dd ul li{
+	display:inline-block;
+	background:#f2eade;
+	font-size:78.5%;
+	font-weight:bold;
+	padding:3px 8px;
+	border-radius:3px;
+	margin-bottom:5px;
+}
+
+.bookDetailBlock01 .detail .bookStatus{
+	text-align:center;
+}
+
+.bookDetailBlock01 .detail .bookStatus a{
+	display:block;
+	width:100px;
+	margin:0 auto;
+}
+
+.bookDetailBlock01 .detail .bookStatus a:hover{
+	text-decoration:none;
+}
+
+.bookDetailBlock01 .detail .bookStatus p{
+	font-weight:bold;
+	color:#ec6401;
+	margin-bottom:15px;
+}
+
+.bookDetailBlock01 .detail .bookStatus ul li:last-child{
+	margin-top:10px;
+}
+/* ==========================================================================
+ConfigProfileArea
+========================================================================== */
+#configProfileArea{
+	background:#fff;
+}
+
+#configProfileAreaInner{
+	max-width:800px;
+	margin:0 auto;
+	padding:60px 0;
+}
+
+/* configProfileBlock01
+-------------------------------------*/
+#configProfileArea .profileImageBlock{
+	background:#f2eade;
+	max-width:150px;
+	padding:30px;
+	float:left;
+}
+
+#configProfileArea .profileImageBlock .profileImage{
+	margin-bottom:30px;
+}
+
+#configProfileArea .profileImageBlock .profileImage img{
+	display:block;
+	width:150px;
+	height:150px;
+	border-radius:75px;
+}
+
+@media screen and (max-width: 640px){
+	#configProfileArea .profileImageBlock{
+		background: none;
+		padding:30px;
+		margin:0 auto;
+		float: none;
+	}
+}
+
+/* profiles
+-------------------------------------*/
+.profiles{
+	float:right;
+	width:560px;
+	line-height: 1.5;
+}
+.profiles ul li{
+	margin-bottom:30px;
+}
+.profiles ul li p.textarea,
+.profiles ul li textarea,
+.profiles ul li input{
+	font-family:inherit;
+	font-size:inherit;
+	background:#f2eade;
+	border:none;
+	line-height: 1.5;
+}
+.profiles ul li:nth-child(odd){
+	float:left;
+	padding-right:30px;
+}
+.profiles ul li:nth-child(even){
+	float:right;
+}
+.profiles ul li:nth-child(5){
+	clear:both;
+	padding:0;
+}
+.profiles ul li p{
+	color:#ff9c00;
+	font-weight:bold;
+	margin-bottom:7px;
+}
+
+.profiles ul li input{
+	width:240px;
+	padding:10px;
+}
+
+.profiles ul li .propertyText{
+	color:#000;
+	font-weight: normal;
+	font-family:inherit;
+	font-size:inherit;
+	background:#f2eade;
+	border:none;
+	padding:10px;
+	width:240px;
+	margin:0;
+	line-height: 1.5;
+	white-space: nowrap;
+	overflow-x:hidden;
+}
+
+.profiles ul li p.textarea,
+.profiles ul li textarea{
+	color:#4d3b1e;
+	width:520px;
+	height:80px;
+	resize:none;
+	padding:20px;
+	margin-bottom:0;
+	font-weight:normal;
+}
+@media screen and (max-width: 640px){
+	.profiles{
+		padding:0 2% 0;
+		float: none;
+		width: auto;
+	}
+	.profiles ul{
+		max-width:410px;
+		margin:0 auto;
+	}
+	.profiles ul li:nth-child(odd){
+		float:none;
+		padding-right:0px;
+	}
+	.profiles ul li:nth-child(even){
+		float:none;
+	}
+	.profiles ul li:nth-child(5){
+		clear:both;
+		padding:0;
+	}
+	.profiles ul li p{
+		width: auto;
+	}
+	.profiles ul li .propertyText{
+		width: auto;
+	}
+	.profiles ul li input{
+		width:100%;
+		box-sizing: border-box;
+	}
+	.profiles ul li textarea{
+		width:100%;
+		box-sizing: border-box;
+	}
+}
+
+/* configProfileBlock03
+-------------------------------------*/
+#configProfileArea .configProfileBlock03{
+	text-align:center;
+}
+
+#configProfileArea .configProfileBlock03 input[type="submit"]{
+	clear:both;
+}

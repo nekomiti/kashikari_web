@@ -1,0 +1,615 @@
+@charset "UTF-8";
+/* --------------------
+ COMMON
+----------------------- */
+/*
+html{
+	overflow-y: scroll;
+}
+
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+.clear:after {
+	clear: both;
+}
+.clear {
+	*zoom: 1;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+li{
+	list-style-type: none;
+}
+*/
+
+/* ==========================================================================
+Service Category Reset & Base Setting
+========================================================================== */
+/* body setting
+-------------------------------------*/
+body{
+	min-width:800px;
+	font-family:"游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color:#4d3b1e;
+	font-size:87.5%;/*仮*/
+}
+a{color:#4d3b1e;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+li{list-style:none;}
+
+/* lsPage */
+body#lsPage{
+	min-width:400px;
+	background:#ff9c00;
+}
+
+
+*{
+	line-height:1;
+}
+
+img{
+	vertical-align:base;
+	max-width: 100%;
+}
+@media screen and (max-width: 640px){
+	body{
+		min-width: 0;
+	}
+	body#lsPage{
+		min-width:0;
+	}
+}
+
+/* clearfix
+-------------------------------------*/
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+.clear:after {
+	clear: both;
+}
+.clear {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+wrap setting
+========================================================================== */
+#wrap{
+}
+
+#mypage #wrap{
+	background:#f2eadf;
+}
+
+.anotherBgColor{
+	background:#f2eadf;
+}
+
+@media screen and (max-width: 640px){
+	#lsPage #wrapInner{
+		padding:0 3%;
+	}
+}
+
+/* ==========================================================================
+HeaderArea Layout
+========================================================================== */
+#headerArea{
+	background:#ff9c00;
+}
+
+#headerAreaInner{
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+
+#headerArea #logo{
+	float:left;
+	margin-top:10px;
+}
+
+@media screen and (max-width: 640px){
+	#headerAreaInner{
+		width:100%;
+	}
+	#headerArea #logo{
+		float:none;
+		margin:0 auto;
+		max-width:400px;
+	}
+}
+
+/* headerNavBlock01
+-------------------------------------*/
+#headerArea .headerNavBlock01{
+	width:435px;
+	float:left;
+}
+
+#headerArea .headerNavBlock01 ul{
+	margin:18px 0 65px;
+	text-align:right;
+}
+
+#headerArea .headerNavBlock01 ul li{
+	display:inline-block;
+	margin-left:15px;
+	background:url(../images/cmn_icon_002.png) no-repeat 0 0.1em;
+}
+
+#headerArea .headerNavBlock01 ul li:first-child{
+	margin-left:0;
+}
+
+#headerArea .headerNavBlock01 ul li a{
+	font-weight:bold;
+	color:#fff;
+	padding-left:20px;
+}
+
+#headerArea .headerNavBlock01 ul li a:hover{
+	border-bottom:dotted 2px #fff;
+}
+
+@media screen and (max-width: 640px){
+	#headerArea .headerNavBlock01{
+		display: none;
+	}
+}
+
+
+/* ==========================================================================
+NavArea Layout
+========================================================================== */
+#navArea{
+	position:absolute;
+	left:406px;
+	bottom:0;
+}
+
+#navArea ul li{
+	float:left;
+	font-size:0;
+}
+
+#navArea ul li a{
+	display:block;
+	height:50px;
+}
+@media screen and (max-width: 640px){
+	#navArea{
+		clear:both;
+		position: static;
+	}
+	#navArea ul li{
+		float:left;
+		font-size:0;
+		width:50%;
+	}
+	#navArea ul li:first-child{
+		text-align:right;
+	}
+
+	#navArea ul li a{
+		height: auto;
+	}
+}
+
+/* ==========================================================================
+NewsArea Layout
+========================================================================== */
+#newsArea{
+	background:#f2eade;
+}
+
+#newsAreaInner{
+	width:800px;
+	margin:0 auto;
+	padding:40px 0;
+}
+
+#newsAreaInner p{
+	width:105px;
+	color:#ff9c00;
+	font-weight:bold;
+	float:left;
+	word-break:break-all;
+}
+
+#newsAreaInner ul{
+	padding-left:105px;
+}
+
+#newsAreaInner ul li{
+	margin-bottom:15px;
+}
+
+#newsAreaInner ul li:last-child{
+	margin-bottom:0;
+}
+
+#newsAreaInner ul li time{
+	font-weight:bold;
+}
+@media screen and (max-width: 640px){
+	#newsAreaInner{
+		width:auto;
+		margin:0 auto;
+		padding:0;
+	}
+}
+
+/* ==========================================================================
+MyNewsArea Layout
+========================================================================== */
+#myNewsArea{
+	background:#fff;
+}
+
+#myNewsAreaInner{
+	width:800px;
+	margin:0 auto;
+	padding:40px 0;
+	text-align:center;
+}
+
+#myNewsArea p{
+	color:#ff9c00;
+	font-size:142%;
+	font-weight:bold;
+	margin-bottom:40px;
+}
+
+#myNewsArea ul li{
+	margin-bottom:15px;
+}
+
+#myNewsArea ul li:last-child{
+	margin-bottom:0;
+}
+
+
+#myNewsArea .meNewsAreaList01{
+	margin-bottom:15px;
+}
+
+#myNewsArea .meNewsAreaList02{
+	color:#ff9c00;
+}
+
+@media screen and (max-width: 640px){
+	#myNewsAreaInner{
+		width: auto;
+		padding:20px 0;
+	}
+}
+
+/* ==========================================================================
+ContentsArea Layout
+========================================================================== */
+#contentsArea{
+}
+@media screen and (max-width: 640px){
+	#contentsArea{
+	}
+}
+
+/* h1Block01
+-------------------------------------*/
+.h1Block01 {
+	padding:60px 0;
+	background:#fff;
+}
+
+.h1Block01 h1{
+	background:url(../images/contents_bg_001.png) no-repeat center top;
+	padding:60px 0 0;
+	font-size:285%;
+	font-weight:bold;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.h1Block01 >p{
+	color:#ff9c00;
+	font-weight:bold;
+	text-align:center;
+}
+
+/* h1Block02
+-------------------------------------*/
+.h1Block02 {
+	padding:60px 0;
+	background:#f2eade;
+}
+
+.h1Block02 h1{
+	background:url(../images/contents_bg_001.png) no-repeat center top;
+	padding:60px 0 0;
+	font-size:285%;
+	font-weight:bold;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.h1Block02 >p{
+	color:#ff9c00;
+	font-weight:bold;
+	text-align:center;
+}
+
+/* h1Block03
+-------------------------------------*/
+.h1Block03 {
+	padding:60px 0;
+	background:#f2eade;
+}
+
+.h1Block03 h1{
+	font-size:285%;
+	font-weight:bold;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.h1Block03 >p{
+	color:#ff9c00;
+	font-weight:bold;
+	text-align:center;
+}
+
+.h1Block03 h1 +p{
+	margin-bottom:30px;
+}
+
+.h1Block03 h1 +p +p{
+	color:#4d3b1e;
+}
+
+.h1Block03 .ownerImage{
+	text-align:center;
+	margin-bottom:30px;
+}
+
+.h1Block03 .ownerImage img{
+	display:inline-block;
+	width:150px;
+	height:150px;
+	border-radius:75px;
+}
+
+/* contentsBlock01
+-------------------------------------*/
+.contentsBlock01{
+	padding:20px 0 60px;
+	background:#fff;
+}
+@media screen and (max-width: 640px){
+	.contentsBlock01{
+		width: auto;
+		margin: 0;
+	}
+}
+
+/* contentsBlock02
+-------------------------------------*/
+.contentsBlock02{
+	padding:20px 0 60px;
+	background:#f2eade;
+}
+@media screen and (max-width: 640px){
+	.contentsBlock02{
+		width: auto;
+		margin: 0;
+	}
+}
+
+/* contentsBlock03
+-------------------------------------*/
+.contentsBlock03{
+	padding:60px 0;
+	background:#f2eade;
+}
+@media screen and (max-width: 640px){
+	.contentsBlock03{
+		width: auto;
+		margin: 0;
+	}
+}
+
+/* contentsBlockInner
+-------------------------------------*/
+.contentsBlockInner{
+	width:800px;
+	margin:0 auto;
+}
+@media screen and (max-width: 640px){
+	.contentsBlockInner{
+		width:auto;
+		padding:2%;
+	}
+}
+
+/* ==========================================================================
+Search Layout
+========================================================================== */
+/* seachCharaBlock01
+-------------------------------------*/
+.seachCharaBlock01 form{
+	text-align:center;
+	margin-bottom:85px;
+}
+
+.seachCharaBlock01 form input[type="text"]{
+	background:url(../images/contents_bg_002.png) no-repeat 10px 15px;
+	border:none;
+	min-width:304px;
+	min-height:50px;
+	border-bottom:solid 3px #ff9c00;
+	padding-left:50px;
+	margin-right:15px;
+	font-family:inherit;
+	font-size:inherit;
+}
+
+/* seachCharaBlock01
+-------------------------------------*/
+.seachGenreBlock01 ul li{
+	display:inline-block;
+	margin:0 30px 30px 0;
+	background:url(../images/cmn_icon_001.png) no-repeat 0 0.1em;
+}
+
+.seachGenreBlock01 ul li a{
+	font-weight:bold;
+	margin-left:25px;
+}
+
+.seachGenreBlock01 ul li a:hover{
+	color:#ff9c00;
+	border-bottom:dotted 2px #ff9c00;
+}
+
+/* seachGenreBlock01
+-------------------------------------*/
+.seachOwnerBlock01{
+	margin-bottom:30px;
+}
+
+.seachOwnerBlock01 .accordionTitleBlock01{
+	text-align:center;
+	background:#f2eade url(../images/contents_icon_002.gif) no-repeat 15px 0.4em;
+	border-radius:5px;
+	margin-top:2px;
+}
+
+.seachOwnerBlock01 .accordionTitleBlock01.close{
+	text-align:center;
+	background:#f2eade url(../images/contents_icon_003.gif) no-repeat 15px 0.4em;
+	border-radius:5px 5px 0 0;
+}
+
+
+.seachOwnerBlock01 .accordionTitleBlock01:hover{
+	cursor:pointer;
+}
+
+.seachOwnerBlock01 .accordionTitleBlock01 h3{
+	font-size:125%;
+	padding:10px 0;
+}
+
+.seachOwnerBlock01 .accordionDetailBlock01{
+	padding:30px;
+	display:none;
+}
+
+.seachOwnerBlock01 .accordionDetailBlock01 ul li{
+	background:url(../images/cmn_icon_001.png) no-repeat 0 0.1em;
+	margin-bottom:25px;
+}
+
+.seachOwnerBlock01 .accordionDetailBlock01 ul li:last-child{
+	margin-bottom:0;
+}
+
+.seachOwnerBlock01 .accordionDetailBlock01 ul li a{
+	margin-left:25px;
+	font-weight:bold;
+}
+
+.seachOwnerBlock01 .accordionDetailBlock01 ul li a:hover{
+	color:#ff9c00;
+	border-bottom:dotted 2px #ff9c00;
+}
+
+/* numberHitsBlock01
+-------------------------------------*/
+.numberHitsBlock01{
+	margin-bottom:30px;
+}
+
+/* ==========================================================================
+Mypage Layout
+========================================================================== */
+/* commonBlockListBlock01
+-------------------------------------*/
+.commonBookListBlock01{
+	margin-bottom:60px;
+}
+
+.commonBookListBlock01 form{
+	padding-top:30px;
+	text-align:center;
+	margin-bottom:60px;
+}
+
+/* ==========================================================================
+FootersArea Layout
+========================================================================== */
+#footerArea{
+	background:#4d3b1e;
+	padding:30px 0;
+}
+
+#footerAreaInner{
+	max-width:800px;
+	margin:0 auto;
+}
+
+#footerArea #copyright{
+	color:#fff;
+	text-align:right;
+}
+@media screen and (max-width: 640px){
+	#footerArea #copyright{
+		text-align:center;
+	}
+}
+
+/* footerNavBlock01
+-------------------------------------*/
+#footerArea .footerNavBlock01 ul:first-child{
+	float:left;
+	width:200px;
+}
+
+#footerArea .footerNavBlock01 ul:last-child{
+	padding-left:200px;
+}
+
+
+#footerArea .footerNavBlock01 ul li{
+	background:url(../images/cmn_icon_002.png) no-repeat 0 0.1em;
+	margin-bottom:20px;
+}
+
+#footerArea .footerNavBlock01 ul li a{
+	font-weight:bold;
+	color:#fff;
+	margin-left:20px;
+}
+
+#footerArea .footerNavBlock01 ul li a:hover{
+	color:#fff;
+	border-bottom:dotted 2px #fff;
+}
+@media screen and (max-width: 640px){
+	#footerArea .footerNavBlock01{
+		display: none;
+	}
+}
