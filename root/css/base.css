@@ -33,13 +33,16 @@ li{
 /* ==========================================================================
 Service Category Reset & Base Setting
 ========================================================================== */
+html{
+	font-size: 10px;
+}
 /* body setting
 -------------------------------------*/
 body{
 	min-width:800px;
 	font-family:"游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	color:#4d3b1e;
-	font-size:87.5%;/*仮*/
+	font-size:1.4rem;/*仮*/
 }
 a{color:#4d3b1e;}
 a:link{text-decoration:none;}
@@ -128,8 +131,9 @@ HeaderArea Layout
 	}
 	#headerArea #logo{
 		float:none;
-		margin:0 auto;
+		margin-left: 10px;
 		max-width:400px;
+		width: 60%;
 	}
 }
 
@@ -138,6 +142,7 @@ HeaderArea Layout
 #headerArea .headerNavBlock01{
 	width:435px;
 	float:left;
+	font-size: 1.4rem;
 }
 
 #headerArea .headerNavBlock01 ul{
@@ -156,7 +161,6 @@ HeaderArea Layout
 }
 
 #headerArea .headerNavBlock01 ul li a{
-	font-weight:bold;
 	color:#fff;
 	padding-left:20px;
 }
@@ -231,7 +235,8 @@ NewsArea Layout
 }
 
 #newsAreaInner ul{
-	padding-left:105px;
+	float: right;
+	width: 680px
 }
 
 #newsAreaInner ul li{
@@ -246,10 +251,28 @@ NewsArea Layout
 	font-weight:bold;
 }
 @media screen and (max-width: 640px){
+	#newsAreaInner p{
+		width:auto;
+		color:#ff9c00;
+		font-weight:bold;
+		float:none;
+		word-break:break-all;
+		text-align: center;
+		font-size: 1.6rem;
+		padding:20px 0;
+	}
+	#newsAreaInner ul{
+		float: none;
+		width: auto;
+		margin-top:10px;
+	}
+	#newsAreaInner ul span{
+		display: block;
+	}
 	#newsAreaInner{
 		width:auto;
 		margin:0 auto;
-		padding:0;
+		padding:10px 2% 30px;
 	}
 }
 
@@ -269,7 +292,7 @@ MyNewsArea Layout
 
 #myNewsArea p{
 	color:#ff9c00;
-	font-size:142%;
+	font-size:1.8rem;
 	font-weight:bold;
 	margin-bottom:40px;
 }
@@ -294,7 +317,14 @@ MyNewsArea Layout
 @media screen and (max-width: 640px){
 	#myNewsAreaInner{
 		width: auto;
-		padding:20px 0;
+		padding:30px 0 30px;
+	}
+
+	#myNewsArea p{
+		color:#ff9c00;
+		font-size:1.8rem;
+		font-weight:bold;
+		margin-bottom:30px;
 	}
 }
 
@@ -329,6 +359,12 @@ ContentsArea Layout
 	font-weight:bold;
 	text-align:center;
 }
+@media screen and (max-width: 640px){
+	.h1Block01 {
+		padding:30px 0;
+		background:#fff;
+	}
+}
 
 /* h1Block02
 -------------------------------------*/
@@ -350,6 +386,12 @@ ContentsArea Layout
 	color:#ff9c00;
 	font-weight:bold;
 	text-align:center;
+}
+@media screen and (max-width: 640px){
+	.h1Block02 {
+		padding:30px 0;
+		background:#f2eade;
+	}
 }
 
 /* h1Block03
@@ -415,6 +457,7 @@ ContentsArea Layout
 	.contentsBlock02{
 		width: auto;
 		margin: 0;
+		padding-bottom: 0;
 	}
 }
 
@@ -466,6 +509,20 @@ Search Layout
 	font-size:inherit;
 }
 
+@media screen and (max-width: 640px){
+	.seachCharaBlock01 form{
+		padding: 2%;
+		width: auto;
+	}
+	.seachCharaBlock01 form input[type="text"]{
+		text-align:center;
+		margin-bottom:40px;
+		min-width:0px;
+		margin-right:0;
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
 /* seachCharaBlock01
 -------------------------------------*/
 .seachGenreBlock01 ul li{
@@ -509,7 +566,7 @@ Search Layout
 }
 
 .seachOwnerBlock01 .accordionTitleBlock01 h3{
-	font-size:125%;
+	font-size: 1.6rem;
 	padding:10px 0;
 }
 
@@ -537,6 +594,11 @@ Search Layout
 	border-bottom:dotted 2px #ff9c00;
 }
 
+@media screen and (max-width: 640px){
+	.seachOwnerBlock01 {
+		margin-top: 40px;
+	}
+}
 /* numberHitsBlock01
 -------------------------------------*/
 .numberHitsBlock01{
@@ -558,6 +620,16 @@ Mypage Layout
 	margin-bottom:60px;
 }
 
+@media screen and (max-width: 640px){
+	.commonBookListBlock01{
+		margin: 0;
+	}
+	.commonBookListBlock01 form{
+		padding-top:0px;
+		text-align:center;
+		margin-bottom:30px;
+	}
+}
 /* ==========================================================================
 FootersArea Layout
 ========================================================================== */
@@ -574,6 +646,8 @@ FootersArea Layout
 #footerArea #copyright{
 	color:#fff;
 	text-align:right;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 @media screen and (max-width: 640px){
 	#footerArea #copyright{
