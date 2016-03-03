@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="******">
+<meta name="keywords" content="******,******,******,******">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>カッシーナとカリンカ | アカウント登録</title>
+<link href="css/common.css" rel="stylesheet">
+<link href="css/lspage.css" rel="stylesheet">
+
+<!-- loading plugin styles -->
+<link href="js/jqueryFormValidetor/jquery.formValidetor.css" rel="stylesheet">
+<link href="js/jqueryModalWindow/jquery.modalWindow.css" rel="stylesheet">
+<!--  plugins -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jqueryFormValidetor/jquery.formValidetor.js"></script>
+<script src="js/jqueryModalWindow/jquery.modalWindow.js"></script>
+<script type="text/javascript" src="js/jQueryAutoHeight.js"></script>
+<!-- loading scripts -->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('form').formValidator();
+	$('.modal').mordalWindow();
+});
+</script>
+</head>
+<body id="lsPage">
+<article id="wrap">
+<div id="wrapInner">
+
+<section>
+	<h1 id="logo"><img src="images/lspage_logo_001.gif" alt="&ldquo;KASHIKARI SYSTEM&rdquo; カッシーナとカリンカ"></h1>
+	<div id="lsArea">
+			<form class="form-container" id="sign-up">
+			<p><label>
+				<input class="form-field number" data-required="required" id="signup_number" type="text" name="employee_number"><br>
+				社員番号
+			</label></p>
+			<p><label>
+				<input type="password" data-required="required" id="signup_password" name="user[password]"><br>
+				パスワード
+			</label></p>
+			<p><label>
+				<input class="form-field" data-required="required" id="signup_name" type="text" name="firstname"><br>
+				名前
+			</label></p>
+			<p><label>
+				<input class="form-field" data-required="required" id="signup_phonetic" type="text" name="phonetic"><br>
+				ふりがな
+			</label></p>
+			<p><label>
+				<input class="form-field mail-address" data-required="required" id="signup_email" type="text" name="email"><br>
+				メールアドレス
+			</label></p>
+			<input type="submit" value="アカウント発行" class="btnType08">
+		</form>
+	<!-- / #lsArea --></div>
+</section>
+<!-- / #wrapInner --></div>
+<!-- / #wrap --></article>
+</body>
+</html>

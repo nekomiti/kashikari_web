@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="******">
+<meta name="keywords" content="******,******,******,******">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>カッシーナとカリンカ</title>
+<link href="css/common.css" rel="stylesheet">
+
+<!-- loading plugin styles -->
+<link href="js/jqueryFormValidetor/jquery.formValidetor.css" rel="stylesheet">
+<link href="js/jqueryModalWindow/jquery.modalWindow.css" rel="stylesheet">
+<!--  plugins -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jqueryFormValidetor/jquery.formValidetor.js"></script>
+<script src="js/jqueryModalWindow/jquery.modalWindow.js"></script>
+<script type="text/javascript" src="js/jQueryAutoHeight.js"></script>
+<!-- loading scripts -->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('form').formValidator();
+	$('.modal').mordalWindow();
+});
+</script>
+</head>
+<body id="mypage">
+<article id="wrap">
+<div id="wrapInner">
+<header id="headerArea">
+	<div id="headerAreaInner" class="clear">
+	<p id="logo"><a href="/"><img src="images/header_logo_001.gif" alt="貸す・借りるを、もっとサポート。カッシーナとカリンカ"></a></p>
+		<div class="headerNavBlock01">
+			<ul>
+				<li><a href="#">サイトマップ</a></li>
+				<li><a href="login.html">ログアウト</a></li>
+			</ul>
+		<!-- / .headerNavBlock01 --></div>
+		<nav id="navArea">
+			<ul>
+				<li><a href="search.html"><img src="images/nav_btn_001_off.gif" alt="本を探す"></a></li>
+				<li><img src="images/nav_btn_002_ac.gif" alt="マイページ"></li>
+			</ul>
+		<!-- / #navArea --></nav>
+	<!-- / #headerAreaInner --></div>
+<!-- / #headerArea --></header>
+
+<section id="myNewsArea">
+	<div id="myNewsAreaInner" class="clear">
+		<p>こんにちは<span class="username">●●</span>さん</p>
+			<ul class="meNewsAreaList01">
+				<li>現在<span class="volume">000</span>冊の本を借りています。</li>
+				<li>現在<span class="volume">000</span>冊の本を貸しています。</li>
+			</ul>
+			<ul class="meNewsAreaList02">
+				<li><span class="name">▲▲▲▲</span>さんから申請がきています。</li>
+			</ul>
+	<!-- / #myNewsAreaInner --></div>
+<!-- / #myNewsArea --></section>
+
+<section id="contentsArea">
+	<div class="h1Block02">
+		<h1>MY PAGE</h1>
+		<p>マイページ</p>	
+	<!-- / .h1Block01 --></div>
+	<div class="contentsBlock02">
+		<div class="contentsBlockInner">
+			<div class="seachCharaBlock01">
+				<div class="headingBlock02">
+					<h2>本の追加</h2>
+				<!-- / .headingBlock01 --></div>
+				<form>
+					<input type="text">
+					<input type="submit" value="データ取得" class="btnType02">
+				</form>
+			<!-- / .seachCharaBlock01 --></div>
+			<div class="commonBookListBlock01">
+				<div class="headingBlock02">
+					<h2>本の削除</h2>
+				<!-- / .headingBlock02 --></div>
+				<div class="bookListBlock01 clear">
+					<ul>
+						<li>
+							<div class="bookDetailBlock01 clear autoHeight">
+								<div class="image"><img src="images/dummybook_img_001.gif" alt="開眼！JavaScript――言語仕様から学ぶJavaScriptの本質" width="120" height="170"></div>
+								<div class="detail">
+									<dl>
+										<dt>開眼！JavaScript――言語仕様から学ぶJavaScriptの本質</dt>
+										<dd>
+											<ul>
+												<li>JavaScript</li>
+											</ul>
+										</dd>
+									</dl>
+									<div class="bookStatus">
+										<a href="#"><div class="btnType06">削除</div></a>
+									</div>
+								<!-- / .detail --></div>
+							<!-- / .bookDetailBlock01 --></div>
+						</li>
+						<li>
+							<div class="bookDetailBlock01 anotherColor clear autoHeight">
+								<div class="image"><img src="images/dummybook_img_002.gif" alt="HTML5/CSS3モダンコーディング フロントエンドエンジニアが教える3つの本格レイアウト スタンダード・グリッド・シングルページレイアウトの作り方 (WEB Engineer’s Books)" width="120" height="170"></div>
+								<div class="detail">
+									<dl>
+										<dt>HTML5/CSS3モダンコーディング フロントエンドエンジニアが教える3つの本格レイアウト スタンダード・グリッド・シングルページレイアウトの作り方 (WEB Engineer’s Books)</dt>
+										<dd>
+											<ul>
+												<li>HTML</li>
+												<li>CSS</li>
+											</ul>
+										</dd>
+									</dl>
+									<div class="bookStatus">
+										<div class="iconType02">貸出中</div>
+									</div>
+								<!-- / .detail --></div>
+							<!-- / .bookDetailBlock01 --></div>
+						</li>
+						<li>
+							<div class="bookDetailBlock01 clear autoHeight">
+								<div class="image"><img src="images/dummybook_img_003.gif" alt="あらゆる難局であなたを助けるデザインの技 (インプレスムック エムディエヌ・ムック)" width="120" height="170"></div>
+								<div class="detail">
+									<dl>
+										<dt>あらゆる難局であなたを助けるデザインの技 (インプレスムック エムディエヌ・ムック)</dt>
+										<dd>
+											<ul>
+												<li>Photoshop</li>
+												<li>デザイン</li>
+											</ul>
+										</dd>
+									</dl>
+									<div class="bookStatus">
+										<a href="#"><div class="btnType06">削除</div></a>
+									</div>
+								<!-- / .detail --></div>
+							<!-- / .bookDetailBlock01 --></div>
+						</li>
+						<li>
+							<div class="bookDetailBlock01 clear autoHeight">
+								<div class="image"><img src="images/dummybook_img_004.gif" alt="あらゆる難局であなたを助けるデザインの技 (インプレスムック エムディエヌ・ムック)" width="120" height="170"></div>
+								<div class="detail">
+									<dl>
+										<dt>あらゆる難局であなたを助けるデザインの技 (インプレスムック エムディエヌ・ムック)</dt>
+										<dd>
+											<ul>
+												<li>Ruby</li>
+											</ul>
+										</dd>
+									</dl>
+									<div class="bookStatus">
+										<a href="#"><div class="btnType06">削除</div></a>
+									</div>
+								<!-- / .detail --></div>
+							<!-- / .bookDetailBlock01 --></div>
+						</li>
+					</ul>
+				<!-- / .bookListBlock01 --></div>
+			<!-- / .commonBookListBlock01 --></div>
+			<div class="centerBtnBlock01">
+				<form>
+					<input type="submit" value="更新して戻る" class="btnType02">
+				</form>
+			</div>
+		<!-- / .contentsBlockInner --></div>
+	<!-- / .contentsBlock02 --></div>
+<!-- / #contentsArea --></section>
+
+<footer id="footerArea">
+	<div id="footerAreaInner" class="clear">
+		<div class="footerNavBlock01">
+			<ul>
+				<li><a href="#">本を探す</a></li>
+				<li><a href="#">マイページ</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">サイトマップ</a></li>
+				<li><a href="#">ログアウト</a></li>
+			</ul>
+		<!-- / .footerNavBlock01 --></div>
+		<p id="copyright">&copy; Copyright ○○○ all right reserved.</p>
+	<!-- / #footerAreaInner .clear --></div>
+<!-- / #footerArea --></footer>
+
+<!-- / #wrapInner --></div>
+<!-- / #wrap --></article>
+</body>
+</html>
