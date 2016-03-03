@@ -7,6 +7,7 @@ Heading Module
 	margin-bottom:30px;
 	padding-bottom:6px;
 	border-bottom:solid 3px #f2eade;
+	font-size: 1.6rem;
 }
 
 .headingBlock02{
@@ -41,8 +42,11 @@ Heading Module
 @media screen and (max-width: 640px){
 	.headingBlock01{
 		margin-bottom:30px;
-		padding-bottom:6px;
+		padding-bottom:20px;
 		border-bottom:solid 3px #f2eade;
+		text-align: center;
+		font-size: 1.8rem;
+		font-weight: normal;
 	}
 
 	.headingBlock02{
@@ -50,22 +54,26 @@ Heading Module
 		padding-bottom:10px;
 		border-bottom:solid 3px #fff;
 		text-align:center;
-		font-size:1.2rem;
+		font-size:1.8rem;
 	}
 	.headingBlock03 h2{
 		float: none;
 		text-align: center;
+		font-size: 1.6rem;
 	}
 
 	.headingBlock03{
-		margin-bottom:30px;
-		padding-bottom:6px;
+		margin-bottom:10px;
+		padding-bottom:10px;
 		border-bottom:solid 3px #f2eade;
 		text-align: center;
+		position: relative;
 	}
 	.headingBlock03 .profileCondigBtn{
-		float: right;
-		margin-right: 20px;
+		position: absolute;
+		top: -5px;
+		right: 0;
+		margin-right: 2%;
 	}
 }
 
@@ -124,12 +132,12 @@ Link Module
 Button Module
 ========================================================================== */
 .btnType01{
-	padding:12px 60px 8px;
+	padding:14px 60px 14px;
 	text-align:center;
 	background:#ff9c00;
 	border:none;
 	font-family:inherit;
-	font-size:171%;
+	font-size:1.8rem;
 	font-weight:bold;
 	color:#fff;
 	cursor:pointer;
@@ -146,7 +154,7 @@ Button Module
 	background:#ff9c00;
 	border:none;
 	font-family:inherit;
-	font-size:171%;
+	font-size:1.8rem;
 	font-weight:bold;
 	color:#fff;
 	cursor:pointer;
@@ -163,7 +171,7 @@ Button Module
 	margin:0 auto;
 	padding:4px 10px 2px;
 	background:#ff9c00;
-	font-size:114%;
+	font-size:100%;
 	font-weight:bold;
 	color:#fff;
 	transition: 0.1s ease;
@@ -179,7 +187,7 @@ Button Module
 	margin:0 auto;
 	padding:4px 10px 2px;
 	background:#fff;
-	font-size:114%;
+	font-size:1.6rem;
 	font-weight:bold;
 	color:#4d3b1e;
 	transition: 0.1s ease;
@@ -195,7 +203,7 @@ Button Module
 	margin:0 auto;
 	padding:4px 10px 2px;
 	background:#dcd4c9;
-	font-size:114%;
+	font-size:100%;
 	font-weight:bold;
 	color:#fefefe;
 	transition: 0.1s ease;
@@ -209,16 +217,19 @@ Button Module
 	display:block;
 	width:80px;
 	margin:0 auto;
-	padding:4px 10px 2px;
-	background:#4d3b1e;
-	font-size:114%;
-	font-weight:bold;
 	color:#fff;
+	padding:5px 10px;
+	font-size: 1.4rem;
+	background:#4d3b1e;
+	font-weight:bold;
 	transition: 0.1s ease;
 }
 .btnType06:hover{
 	box-shadow: 0.1em 0.1em 0 #221b0f;
 	transition: 0.1s ease;
+}
+.btnType06 a{
+	color:#fff;
 }
 
 .btnType07{
@@ -289,20 +300,19 @@ Icon Module
 	display:block;
 	width:80px;
 	margin:0 auto;
-	padding:4px 10px 2px;
 	background:#ff9c00;
-	font-size:114%;
+	padding:5px 10px 5px;
+	font-size:1.4rem;
 	font-weight:bold;
 	color:#fff;
 }
-
 .iconType02{
 	display:block;
 	width:80px;
 	margin:0 auto;
-	padding:4px 10px 2px;
+	padding:5px 10px 5px;
+	font-size:1.4rem;
 	background:#fff;
-	font-size:114%;
 	font-weight:bold;
 	color:#4d3b1e;
 }
@@ -311,9 +321,9 @@ Icon Module
 	display:block;
 	width:80px;
 	margin:0 auto;
-	padding:4px 10px 2px;
+	padding:5px 10px 5px;
+	font-size:1.4rem;
 	background:#dcd4c9;
-	font-size:114%;
 	font-weight:bold;
 	color:#fefefe;
 }
@@ -322,11 +332,22 @@ Icon Module
 	display:block;
 	width:80px;
 	margin:0 auto;
-	padding:4px 10px 2px;
+	padding:5px 10px 5px;
+	font-size:1.4rem;
 	background:#4d3b1e;
-	font-size:114%;
 	font-weight:bold;
 	color:#fff;
+}
+
+@media screen and (max-width: 640px){
+	.iconType01,
+	.iconType02,
+	.iconType03,
+	.iconType04{
+		width: 60%;
+		padding: 10px;
+		font-size: 1.6rem;
+	}
 }
 
 /* ==========================================================================
@@ -349,6 +370,9 @@ BookBlock Module
 	.bookListBlock01 >ul >li:nth-child(odd){
 		margin-right:0;
 	}
+	.bookListBlock01 >ul >li:last-child{
+		margin-bottom: 10px;
+	}
 }
 
 /* bookDetailBlock01
@@ -366,6 +390,15 @@ BookBlock Module
 		max-width:390px;
 		box-sizing: border-box;
 		margin:0 auto;
+	}
+}
+@media screen and (max-width: 400px){
+	.bookDetailBlock01{
+		width: 100%;
+		max-width:390px;
+		box-sizing: border-box;
+		margin:0 auto;
+		padding:30px 5%;
 	}
 }
 
@@ -432,9 +465,8 @@ BookBlock Module
 }
 
 .bookDetailBlock01 .detail .bookStatus a{
+	text-align:center;
 	display:block;
-	width:100px;
-	margin:0 auto;
 }
 
 .bookDetailBlock01 .detail .bookStatus a:hover{
@@ -461,6 +493,12 @@ ConfigProfileArea
 	max-width:800px;
 	margin:0 auto;
 	padding:60px 0;
+}
+@media screen and (max-width: 640px){
+	#configProfileAreaInner{
+		margin:0 auto;
+		padding:20px 0;
+	}
 }
 
 /* configProfileBlock01
@@ -489,6 +527,17 @@ ConfigProfileArea
 		padding:30px;
 		margin:0 auto;
 		float: none;
+		max-width: 200px;
+		text-align:center;
+	}
+	#configProfileArea .profileImageBlock .profileImage{
+		margin-bottom:0px;
+	}
+	#configProfileArea .profileImageBlock .profileImage img{
+		display:block;
+		width:200px;
+		height:200px;
+		border-radius:100px;
 	}
 }
 
