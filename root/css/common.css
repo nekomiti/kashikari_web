@@ -1,5 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
+@import url('reset.css');
 @import url('base.css');
 @import url('parts.css');
-@import url('reset.css');
