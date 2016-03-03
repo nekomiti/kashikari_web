@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
 <section id="contentsArea">
 	<div class="h1Block02">
 		<h1>MY PAGE</h1>
-		<p>マイページ</p>	
+		<p>マイページ</p>
 	<!-- / .h1Block01 --></div>
 	<div class="contentsBlock02">
 		<div class="contentsBlockInner">
@@ -88,7 +88,7 @@ jQuery(document).ready(function($){
 										</dd>
 									</dl>
 									<div class="bookStatus">
-										<div class="iconType01">貸出可</div>
+										<div class="iconType01"><span>貸出可</span></div>
 									</div>
 								<!-- / .detail --></div>
 							<!-- / .bookDetailBlock01 --></div>
@@ -152,7 +152,7 @@ jQuery(document).ready(function($){
 					</ul>
 				<!-- / .bookListBlock01 --></div>
 			<!-- / .commonBookListBlock01 --></div>
-	
+
 			<div class="commonBookListBlock01">
 				<div class="headingBlock02">
 					<h2>借りている本</h2>
@@ -236,7 +236,7 @@ jQuery(document).ready(function($){
 					</ul>
 				<!-- / .bookListBlock01 --></div>
 			<!-- / .commonBookListBlock01 --></div>
-	
+
 			<div class="commonBookListBlock01" id="">
 				<div class="headingBlock02">
 					<h2>貸している本</h2>
@@ -261,7 +261,7 @@ jQuery(document).ready(function($){
 											<ul>
 												<li class="btnType03"><a href="#">返却確認</a></li>
 											</ul>
-										<div>
+										</div>
 									</div>
 								<!-- / .detail --></div>
 							<!-- / .bookDetailBlock01 --></div>
@@ -282,7 +282,7 @@ jQuery(document).ready(function($){
 									<div class="bookStatus">
 										<p>◆◆◆◆さんに貸出中</p>
 										<ul>
-											<a href="#"><li class="btnType03">返却確認</li></a>
+											<li class="btnType03"><a href="#">返却確認</a></li>
 										</ul>
 									</div>
 								<!-- / .detail --></div>
@@ -302,10 +302,9 @@ jQuery(document).ready(function($){
 										</dd>
 									</dl>
 									<div class="bookStatus">
-										<p>◆◆◆◆さんから申請中</p>
 										<ul>
-											<a href="#modal-01" class="modal"><li class="btnType03">貸出</li></a>
-											<a href="#modal-02" class="modal"><li class="btnType06">申請削除</li></a>
+											<li class="btnType03"><a href="#modal-01" class="modal">貸出</a></li>
+											<li class="btnType06"><a href="#modal-02" class="modal">申請削除</a></li>
 										</ul>
 										<div class="modal-target" id="modal-01">
 											<h3 class="title">貸出</h3>
@@ -351,7 +350,7 @@ jQuery(document).ready(function($){
 	<div id="configProfileAreaInner">
 		<div class="headingBlock03 clear">
 			<h2>プロフィール設定</h2>
-			<p class="profileCondigBtn"><a href="#"><img src="images/profile_002.png"></a></p>
+			<p class="profileCondigBtn"><a href="#">設定<img src="images/profile_002.png"></a></p>
 		<!-- / .headingBlock03 --></div>
 
 		<div class="profileBlock clear">
@@ -383,54 +382,6 @@ jQuery(document).ready(function($){
 				</ul>
 			<!-- / .profiles --></div>
 		</div><!-- /.profileBlock -->
-
-		<div class="profileBlock profileConfigBlock clear">
-			<div class="profileImageBlock">
-				<p class="profileImage"><img src="images/profile_001.jpg" alt="岩永さんのプロフィール画像"></p>
-				<div class="linkBlock02">
-					<p><a href="#">画像を変更する</a></p>
-				<!-- / .linkBlock02 --></div>
-			<!-- / .profileImageBlock --></div>
-			<div class="profiles">
-				<form>
-					<ul class="clear">
-						<li>
-							<label>
-								<p>名前</p>
-								<input type="text" value="岩永剛">
-							</label>
-						</li>
-						<li>
-							<label>
-								<p>ふりがな</p>
-								<input type="text" value="いわながつよし">
-							</label>
-						</li>
-						<li>
-							<label>
-								<p>所属</p>
-								<input type="text" value="福岡WI一課">
-							</label>
-						</li>
-						<li>
-							<label>
-								<p>メールアドレス</p>
-								<input class="form-field mail-address" data-required="required" id="" type="text" name="email" wrap="" value="▲▲▲@trans-cosmos-dmi.co.jp"><br>
-							</label>
-						</li>
-						<li>
-							<label>
-								<p>コメント</p>
-								<textarea>ダミーの文章です。</textarea>
-							</label>
-						</li>
-					</ul>
-					<div class="profileConfigSubmit">
-						<input type="submit" value="設定を保存" class="btnType02">
-					</div>
-				</form>
-			</div><!-- / .profiles -->
-		</div><!-- /.profileConfigBlock -->
 	<!-- / #configProfileAreaInner --></div>
 <!-- / #configProfileArea --></section>
 
