@@ -48,7 +48,7 @@ form label{
 
 .lsPageBlock01{
 	display:inline-block;
-	background:url(../../images/cmn_icon_002.png) no-repeat 0 0.1em;
+	background:url(../images/cmn_icon_002.png) no-repeat 0 0.1em;
 }
 
 .lsPageBlock01 a{
@@ -91,3 +91,95 @@ form label{
 		padding:1% 1.5%;
 	}
 }
+
+
+/* ==========================================================================
+About Page
+========================================================================== */
+/* aboutArea
+-------------------------------------*/
+.about #logo{
+	margin:44px 0 60px;
+	text-align:center;
+}
+
+/* h2 */
+#aboutArea h2{
+	text-align:center;
+	background:#4d3b1e;
+	color:#fff;
+	font-size:24px;
+	padding:40px 20px;
+}
+
+/* contents */
+#aboutArea .contents{
+	background:#f2eade url(../images/lspage_bg_002.gif) no-repeat center top;
+	padding:60px 0 40px;
+}
+
+#aboutArea .contents .imageRightBlock01,
+#aboutArea .contents .imageLeftBlock01{
+	width:800px;
+	margin:0 auto;
+}
+
+#aboutArea .contents .imageRightBlock01{
+	margin-bottom:40px;
+}
+
+#aboutArea .contents .imageRightBlock01 .image{
+	float:right;
+}
+
+#aboutArea .contents .imageRightBlock01 .detail{
+	float:left;
+}
+
+#aboutArea .contents .imageLeftBlock01 .image{
+	float:left;
+}
+
+#aboutArea .contents .imageLeftBlock01 .detail{
+	float:right;
+}
+
+#aboutArea .contents .imageRightBlock01 .detail p,
+#aboutArea .contents .imageLeftBlock01 .detail p{
+	font-size:16px;
+	line-height:2.25;
+	color:#4d3b1e;
+	font-weight:bold;
+}
+
+#aboutArea .contents .imageRightBlock01 .detail p span,
+#aboutArea .contents .imageLeftBlock01 .detail p span{
+	font-size:16px;
+	line-height:2.25;
+	color:#ff9c00;
+}
+
+/* footer */
+#aboutArea .footer{
+	background:#fff url(../images/lspage_bg_003.gif) no-repeat center top;
+	padding:60px 0;
+	text-align:center;
+}
+
+#aboutArea .footer p{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
