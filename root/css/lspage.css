@@ -98,9 +98,17 @@ About Page
 ========================================================================== */
 /* aboutArea
 -------------------------------------*/
+body#lsPage.about{
+	min-width:800px;
+}
 .about #logo{
 	margin:44px 0 60px;
 	text-align:center;
+}
+@media screen and (max-width: 640px){
+	body#lsPage.about{
+		min-width:0;
+	}
 }
 
 /* h2 */
@@ -159,6 +167,27 @@ About Page
 	color:#ff9c00;
 }
 
+
+@media screen and (max-width: 640px){
+	#aboutArea .contents .imageRightBlock01,
+	#aboutArea .contents .imageLeftBlock01{
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	#aboutArea .contents .imageRightBlock01 .image,
+	#aboutArea .contents .imageRightBlock01 .detail,
+	#aboutArea .contents .imageLeftBlock01 .image,
+	#aboutArea .contents .imageLeftBlock01 .detail{
+		float:none;
+		text-align: center;
+	}
+	#aboutArea .contents .imageRightBlock01 .image,
+	#aboutArea .contents .imageLeftBlock01 .image{
+		margin-bottom:2%;
+	}
+}
+
 /* footer */
 #aboutArea .footer{
 	background:#fff url(../images/lspage_bg_003.gif) no-repeat center top;
@@ -172,6 +201,11 @@ About Page
 	margin-bottom:40px;
 }
 
+@media screen and (max-width: 640px){
+	#aboutArea .footer{
+		padding:60px 20px;
+	}
+}
 
 
 
